@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+
+body h2{
+ text-align: center;
+ background-color: rgb(246, 151, 151);
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#content img {
+    width: 24%;
+    min-width: 100px;
+    border-radius: 2rem;
+}

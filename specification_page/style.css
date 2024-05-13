@@ -1,0 +1,37 @@
+body h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 1rem;
+}
+
+body p{
+    text-align:left;
+    /* font-family: cursive; */
+}
+body{
+    background-color: rgb(231, 216, 196);
+}
+.contant  p{
+    text-align:left;
+    /* font-family: cursive; */
+}
+
+.text{
+    font-weight: bold;
+}
+
+.site_view img{
+    box-shadow: 2px 2px 4px black;
+    border-radius: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

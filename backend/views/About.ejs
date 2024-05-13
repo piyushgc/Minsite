@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .container{
+            padding: 170px 50px 0;
+            background:url(../images/pexels-stephan-seeber-1261728.jpg);
+            /* background-blend-mode: lighten; */
+            display: flex;
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            height: 100vh;
+            width: 100%;
+            
+        }
+        .container h1{
+            font-style:normal;
+            font-weight: normal;
+        }
+        .text-contant{
+            color: rgb(255, 253, 253);
+            margin-top: -50px;
+        }
+        .text-contant p{
+            font-size: 20px;
+        }
+        .head{
+            padding-top: 20px;
+           text-align: center;
+           font-size: 50px;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .extra-banner{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* box-shadow: -1px -1px 15px 3px rgba(0,0,0,0.75); */
+        }
+        .banner-contant{
+            padding: 0 50px;
+        }
+
+        .banner-img1{
+            height: 100%;
+            border-radius: 1rem;
+            margin-left: 10px;
+        }
+        .banner-title{
+            /* font-style: oblique; */
+            font-size: 25px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .banner-desc{
+            font-family:cursive;
+            font-size: 15px;
+            margin-bottom: 30px;
+            text-align: left;
+        } 
+    </style>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <div class="container" >
+        <div class="text-contant">
+           <h1 >BalancedLife</h1>
+        <p>BalancedLife is a holistic lifestyle approach that emphasizes overall well-being across physical, mental, and emotional dimensions. It advocates for habits that promote health and vitality, such as regular exercise, balanced nutrition, and adequate rest. By prioritizing these practices, individuals can enhance their physical fitness, mental clarity, and emotional resilience. <br>Mental health is a key focus of BalancedLife, with an emphasis on mindfulness, meditation, and stress management. These practices help individuals reduce anxiety, improve focus, and cultivate a positive mindset.
+
+            BalancedLife also emphasizes the importance of social connections and emotional well-being. Building supportive relationships and engaging in activities that bring joy and fulfillment are integral to a balanced and healthy lifestyle.</p>
+        </div>    
+    </div>
+    <main class="main-container">
+        <h1 class="head">Vision</h1>
+        <hr width="100%" color="black">
+        <div class="extra-banner">
+            
+            <div>
+                <img src="../images/woman-3613840_1280.png" alt="" class="banner-img1" width="390px" height="350px">
+            </div>
+            <div class="contant-banner-container">
+                <div class="banner-contant">
+                    <h3 class="banner-title">
+                        Experience the BalancedLife Lifestyle: Yoga, Nutrition, and Wellness</h3>
+                    <p class="banner-desc">
+
+                        Experience the BalancedLife lifestyle, a holistic approach to health and wellness that encompasses yoga, nutrition, and overall well-being. <br>
+                        <br>
+                        Yoga, a centuries-old practice, offers a myriad of physical and mental benefits. Through a combination of postures, breathing exercises, and meditation, yoga helps improve flexibility, strength, and balance, while also reducing stress and promoting relaxation. It's a practice that nurtures the mind-body connection, encouraging mindfulness and self-awareness. <br>
+                        <br>
+                        Nutrition is another cornerstone of the BalancedLife lifestyle. A balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats provides the essential nutrients your body needs to thrive. Eating well not only fuels your body but also supports your mental health, helping you feel more energized and focused throughout the day. <br>
+                        <br>
+                        Wellness is about more than just physical health—it's about nurturing your overall well-being. This includes taking care of your mental, emotional, and spiritual health. Practices such as mindfulness, meditation, and self-care can help you manage stress, improve sleep, and cultivate a sense of inner peace and balance.                    </p>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/footer') %>
+    <!-- <div class="head">Vision</div> -->
+</body>
+</html>

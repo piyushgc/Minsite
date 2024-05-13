@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Impact</title>
+    <style>
+         .container{
+            padding: 170px 50px 0;
+            background:url(../images/mountain-3732779_1280.jpg);
+            display: flex;
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            
+        }
+        .text-contant h1{
+            font-size: 80px;
+            color: aliceblue;
+        }
+        .main-container h1{
+           text-align: center;
+           font-weight: normal;
+           /* background-color: antiquewhite; */
+        }
+
+        .card-container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            min-height: 280px;
+            margin-bottom: 20px;
+        }
+
+        .card{
+            /* height: 370px; */
+             width: 370px; 
+             
+             /* overflow: hidden;     */
+             margin-left: 30px;
+             object-fit: cover;
+         } 
+         .card-img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%; 
+         }
+         
+        .extra-banner{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* box-shadow: -1px -1px 15px 3px rgba(0,0,0,0.75); */
+        }
+        .banner-contant{
+            padding: 0 50px;
+        }
+
+        .banner-img1{
+            height: 100%;
+            border-radius: 1rem;
+            margin-left: 10px;
+        }
+        .banner-title{
+            font-family: cursive;
+            font-size: 25px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .banner-desc{
+            font-family: cursive;
+            font-size: 15px;
+            margin-bottom: 30px;
+            text-align: left;
+        } 
+        @media screen and (max-width: 768px) {
+    .container {
+        padding: 100px 20px 0;
+    }
+
+    .text-contant h1 {
+        font-size: 40px;
+    }
+
+    .card-container {
+        /* flex-wrap: wrap; */
+        justify-content: center;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .extra-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-img1 {
+        width: 43%;
+        height: auto;
+        margin: 20px 0px 30px 200px;
+    }
+
+    .banner-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .banner-desc {
+        text-align: center;
+    }
+}
+
+        
+
+    </style>
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+    <div class="container" >
+        <div class="text-contant">
+           <h1 >SOCIAL IMPACT</h1>
+        </div>    
+    </div>
+
+    <div class="card-container">
+            <div class="card">
+                 <img src="../images/asset7.jpg"  alt="" class="card-img">
+            </div>
+            <div class="card">
+                  <img src="../images/asset8.jpg" alt="" class="card-img">
+             </div>
+             <div class="card">
+                  <img src="../images/yoga-6723315_1280.jpg"  alt="" class="card-img" >
+             </div>
+             <div class="card">
+                <img src="../images/asset4.jpg"  alt="" class="card-img" >
+           </div>
+        
+    </div>
+
+    
+    <main class="main-container">
+        <div class="extra-banner">
+    
+            <div>
+                <img src="../images/Daco_2392827.png" alt="" class="banner-img1" width="370px" height="350px">
+            </div>
+            <div class="contant-banner-container">
+                <div class="banner-contant">
+                    <h3 class="banner-title">
+                        Balancing Mental and Physical Wellness</h3>
+                    <p class="banner-desc">
+                        Balancing mental and physical wellness is crucial for overall health and happiness. It involves maintaining a harmonious relationship between your mind and body through various practices and activities. Mental wellness encompasses managing stress, anxiety, and emotions, while physical wellness includes regular exercise, proper nutrition, and adequate rest. When you prioritize both aspects, you enhance your resilience, improve cognitive function, and boost your overall quality of life. This balance empowers you to navigate life's challenges with clarity, energy, and a positive outlook.                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="extra-banner">
+            <div class="contant-banner-container">
+                <div class="banner-contant">
+                    <h3 class="banner-title">
+                        The Power of a Healthy Diet</h3>
+                    <p class="banner-desc">
+                        A good diet can also improve mood and mental clarity. Eating a variety of nutrient-rich foods can help maintain a stable blood sugar level, which can in turn support a more stable mood. Certain foods, such as those rich in omega-3 fatty acids found in fish, have been linked to improved cognitive function and a reduced risk of depression.
+
+                        Overall, a good diet is essential for maintaining a healthy body and mind. By choosing whole, nutrient-dense foods and avoiding processed foods high in sugar, unhealthy fats, and additives, you can support your health and well-being in the long term.                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="../images/asset4.jpg" alt="" class="banner-img1" width="390px" height="350p">
+            </div>
+            
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+    
+</body>
+</html>

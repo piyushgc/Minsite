@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+       body{
+         margin: 0;
+         padding: 0;
+         min-height: 100vh;
+      }
+      .container{
+            padding: 170px 50px 0;
+            background:url(../images/5192998.jpg);
+            display: flex;
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        /* .top-heading{
+         font-size: 40px;
+        } */
+
+        .text-contant{
+         width: 60rem;
+         display: flex;
+         flex-direction: column;
+         align-items: end;
+        }
+        .text-contant h1{
+         font-size: 40px;
+        }
+
+        .text-contant p{
+         font-size: 20px;
+        }
+/*
+        .head-contant{
+         margin-right: 100px;
+        }
+
+        .head-contant p{
+         margin-left: 10%;
+        }
+         */
+      .img-container h1{
+         text-align: center;
+         font-weight: normal;
+         margin-top: 15px;
+         font-family:cursive
+         /* background-color: antiquewhite; */
+      }
+      .img-card{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         /* background-color: rgb(0, 0, 0); */
+      }
+      .img-card img{
+         object-fit: cover;
+         object-position: bottom;
+         padding: 10px;
+         border-radius: 2rem;
+      }
+      .img-card img:hover{
+         cursor: pointer;
+         opacity: 0.5;
+      }
+      /* .contant{
+         width: 100%;
+         height: 100%;
+         top:0;
+         left: 0;
+         position: absolute;
+         background: rgba(0,0,0,0.6);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         transition: 0.5s;
+         opacity: 0;
+      }
+      .contant:hover{
+         opacity: 1;
+      } */
+      .img h1{
+         font-size: 20px;
+         color: rgb(39, 37, 37);
+         margin-top: -10px;
+         font-weight: bold;
+      }
+      .end-home {
+         display: flex;
+         justify-content: space-between;
+         padding: 40px;
+         /* width:20%;
+         margin: 10rem auto 0 auto; */
+      }
+      .text{
+         margin-top: 100px;
+      }
+      .text h1{
+         font-weight: bold;
+         font-size: 40px;
+      }
+    </style>
+</head>
+<body>
+   <%- include('./partials/nav') %>
+   <div class="container" >
+      <div class="text-contant">
+         <h1 class="top-heading" ><span class="head-contant">Feel Great.</span><br>
+            Body and Mind.
+      </h1>
+      <!-- <p>Explore recipes, meditations, and articles<br>to inspire your journey to health and<br>  Start feeling great today!</p> -->
+      </div>    
+  </div>
+   
+  <div class="img-container">
+      <h1>BalancedLife: Achieving Harmony and Well-being Through Balance</h1>
+      <div class="img-card">
+         <div class="img">
+            <a href="/health"><img src="../images/physical-activity.jpg" alt="" width="500px" height="375px"></a>
+            <div class="contant">
+               <h1>Health & Wellness</h1>
+            </div>
+         </div>
+         <div class="img">
+            <a href="/food"><img src="../images/pexels-jane-trang-doan-1092730.jpg" alt="" width="500px" height="375px"></a>
+            <h1>Food & Nutrition</h1>
+         </div>
+         <div class="img">
+            <a href="/">
+            <img src="../images/shutterstock_1048696490.webp" alt="" width="500px" height="375px">
+         </a>
+            <h1>Impact</h1>
+         </div>
+         <div class="img">
+            <a href="/blog"><img src="../images/monk-7465763_1280.jpg" alt="" width="500px" height="375px"></a>
+            <h1>Meditation</h1>
+         </div>
+      </div>
+   </div>
+
+   <div class="end-home">
+      <div class="text">
+         <h1>Importance...</h1>
+         <p>Balanced life is important because it promotes overall well-being and reduces the risk of burnout and stress-related illnesses. When we lead a balanced life, we prioritize different aspects of our lives, such as work, family, health, and personal interests, ensuring that none of these areas is neglected. This balance allows us to maintain physical health, mental clarity, and emotional stability.</p>
+      </div>   
+         <img src="../images/10340281_13082.jpg" alt="" width="500px" height="375px">
+   </div>
+
+  <br>
+  <%- include('./partials/footer') %>
+
+  
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            padding: 170px 50px 0;
+            background:url(../images/healthy-food-scaled.jpeg);
+            /* background-blend-mode: lighten; */
+            display: flex;
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            justify-content: center;
+        }
+        .container h1{
+            margin-top: 80px;
+            font-size: 80px;
+            color: azure;
+        }
+        .container p{
+            text-align: center;
+            color: aliceblue;
+            font-weight: bold ;
+            font-size: 25px;
+        }
+        
+        .main-title{
+            text-align: center;
+            font-family: cursive;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(5, 6, 6);
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .card-content{
+            width: 70%;
+            display: flex;
+            justify-content:space-around;
+            margin: 0 auto;
+        }
+        
+        .card{
+            border-radius: 2rem;
+            padding: 2rem 1rem;
+            background: #fff;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0px 7px 10px rgb(0,0,0,0.5);
+            transition: 0.5s ease-in-out;
+        }
+        .card:hover{
+            transform: translateY(20px);
+        }
+
+        .card:before{
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(to bottom, rgba(0,176,155,0.5),rgba(150,201,61,1));
+            z-index: 2;
+            transition: 0.5s all;
+            opacity: 0;
+        }
+         .card:hover::before{
+            opacity: 1;
+         }
+         .card img{
+            border-radius: 2rem;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+
+         .card .info{
+            position: relative;
+            z-index: 3;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.5s all;
+         }
+         .card:hover .info{
+            opacity: 1;
+            transform: translateY(0px);
+         }
+         .card .info h1{
+            margin: 0;
+            font-size: 10px;
+         }
+         .card .info p{
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+         }
+        
+        .banner-img{
+            width: 100%;
+            height: 700px;
+            padding: 130px 0px 0px 0px;
+        }
+        .banner-img-container{
+            position: relative;
+        }
+        .text-banner{
+            position: absolute;
+            top: 25%;
+            color: #fff;
+            padding: 20px;
+        }
+        .text-banner h1{
+            font-size: 60px;
+            margin-left: 20px;
+        }
+        
+        .text-banner p{
+            padding: 0px 20px 0px 20px;
+            margin-right: 700px;
+        }
+
+        .banner-container{
+            top: 10px;
+        }
+        .extra-banner{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* box-shadow: -1px -1px 15px 3px rgba(0,0,0,0.75); */
+        }
+        .banner-contant{
+            padding: 0 50px;
+        }
+
+        .banner-img1{
+            height: 100%;
+            border-radius: 1rem;
+        }
+        .banner-title{
+            font-style: oblique;
+            font-size: 25px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .banner-desc{
+            font-style:italic;
+            font-size: 15px;
+            margin-bottom: 30px;
+            text-align: left;
+        } 
+        
+      /* .end-container {
+         display: flex;
+         justify-content: space-between;
+         padding: 200px 20px 0px 20px;
+         flex-direction: row; */
+         /* align-items: center; */
+         /* width:20%;
+         margin: 10rem auto 0 auto; */
+      /* } */
+      /* .end-home img{
+        border-radius: 1rem;
+      }
+      .text{
+         margin-top: 50px;
+      }
+      .text h1{
+        margin-bottom: 10px;
+        text-align: center;
+         font-weight: bold;
+         font-size: 40px;
+      } */
+      .main-container{
+            margin-top: 250px;
+            margin-bottom: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+    <div class="container" >
+        <div class="text-contant">
+           <h1 >EAT GOOD  FEEL GOOD </h1>
+        <p>Explore recipes, meditations, and articles<br>to inspire your journey to health and<br>  Start feeling great today!</p>
+        </div>    
+    </div>
+    
+    
+    <div class="card-container">
+        <p class="main-title">Food and Nutrition Essentials</p>
+        <div class="card-content">
+            <div class="card">
+                 <img src="../images/asset1.jpg" width="250px" height="300px" alt="" class="card-img">
+                 <div class="info">
+                    <h1>Stuffed Pepper Soup</h1>
+                     <p>With Ground  <br>Turkey and Bell <br>Peppers</p>
+                 </div>
+            </div>
+            <div class="card">
+                  <img src="../images/asset2.jpg" width="250px" height="300px"alt="" class="card-img">
+                  <div class="info">
+                    <h1>Fruity Smoothie Bowl</h1>
+                    <p>With a Sunny Side <br> Up Egg</p>
+                  </div>
+             </div>
+             <div class="card">
+                  <img src="../images/asset3.jpg" width="250px" height="300px" alt="" class="card-img" >
+                  <div class="info">
+                    <h1>Grilled Seasonal Veggies</h1>
+                    <p>Simple Side for <br> Summer Entrees</p>
+                  </div>
+             </div>
+             <div class="card">
+                <img src="../images/asset4.jpg" width="250px" height="300px" alt="" class="card-img" >
+                <div class="info">
+                  <h1>Sausage Breakfast Platter</h1>
+                  <p>With Honey-Oat <br>Dippers</p>
+                </div>
+           </div>
+        </div>
+        
+        <main class="main-container">
+            <div class="extra-banner">
+        
+                <div>
+                    <img src="../images/asset2.jpg" alt="" class="banner-img1" width="390px" height="350px">
+                </div>
+                <div class="contant-banner-container">
+                    <div class="banner-contant">
+                        <h3 class="banner-title">
+                            Fruity Smoothie Bow  With a Sunny Side Up Egg</h3>
+                        <p class="banner-desc">
+                            Fruity Smoothie Bowl with a Sunny Side Up Egg is a nutritious and delicious meal that offers a variety of health benefits. The smoothie bowl is typically made with a blend of fruits like bananas, berries, and mango, which are rich in vitamins, minerals, and antioxidants. These fruits can help boost your immune system, improve digestion, and provide a natural source of energy.
+
+                            Adding a sunny side up egg to the bowl provides a good source of protein, which is essential for building and repairing tissues in the body. Eggs also contain important nutrients like vitamin D, which is important for bone health, and choline, which is important for brain health.                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-banner">
+                <div class="contant-banner-container">
+                    <div class="banner-contant">
+                        <h3 class="banner-title">
+                            Sausage Breakfast Platter
+                            With Honey-Oat
+                            Dippers</h3>
+                        <p class="banner-desc">
+                            A Sausage Breakfast Platter with Honey-Oat Dippers offers a balanced and nutritious meal to kickstart your day. Sausages provide a good source of protein, essential for muscle repair and growth. The honey-oat dippers offer a mix of complex carbohydrates and natural sugars, providing a quick energy boost. Oats are also rich in fiber, aiding digestion and promoting a feeling of fullness. Additionally, the combination of flavors in this dish makes it a delicious and satisfying breakfast option.                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/asset4.jpg" alt="" class="banner-img1" width="390px" height="350p">
+                </div>
+            </div>
+        </main>
+        <%- include('./partials/footer') %>
+</body>
+</html>
